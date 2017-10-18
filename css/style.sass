@@ -1,0 +1,28 @@
+$break-medium: "only screen and (max-width: 600px)"
+
+header#topbar
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap	
+	img
+		margin: 5px
+	#personalInfo
+		text-align: right
+	#contactMethod
+		height: 30px
+		span 
+			height: 30px
+			width: 30px
+		img
+			height: 100%
+	@media #{$break-medium}
+		&
+			justify-content: center
+		img
+			text-align: center	
+		#personalInfo
+			text-align: center
+
+
+

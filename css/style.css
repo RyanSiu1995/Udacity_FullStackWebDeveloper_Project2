@@ -1,0 +1,25 @@
+header#topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  header#topbar img {
+    margin: 5px; }
+  header#topbar #personalInfo {
+    text-align: right; }
+  header#topbar #contactMethod {
+    height: 30px; }
+    header#topbar #contactMethod span {
+      height: 30px;
+      width: 30px; }
+    header#topbar #contactMethod img {
+      height: 100%; }
+  @media only screen and (max-width: 600px) {
+    header#topbar {
+      justify-content: center; }
+    header#topbar img {
+      text-align: center; }
+    header#topbar #personalInfo {
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

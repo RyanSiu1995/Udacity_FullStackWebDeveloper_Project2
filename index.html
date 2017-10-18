@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ryan Siu's Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- lib : jquery -->
+	<script type="application/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+	<!-- lib : popper.js -->
+	<script type="application/javascript" src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
+	<!-- Lib : Bootstrap 4 -->
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-reboot.min.css">
+	<!-- Lib : Vuejs -->
+	<script src="lib/vuejs/vue.js"></script>
+	<script src="js/showcase.js"></script>
+</head>
+<body>
+	<header id="topbar">
+		<img src="images/rs_icon.png" height="62">
+		<div id="personalInfo">
+			<h1>Ryan, Siu Long Wa</h1>
+			<h3>One Year Student Placement in HKO</h3>
+			<address id="contactMethod">
+				<span>
+					<a href="https://www.linkedin.com/in/ryansiu1995/">
+						<img src="images/linkedin/in-2C-48px-R.png">
+					</a>
+				</span>
+				<span>
+					<a href="https://github.com/RyanSiu1995">
+						<img src="images/github/GitHub-Mark-64px.png">
+					</a>
+				</span>
+			</address>
+		</div>
+	</header>
+	<main id="show-case">
+		<div v-for="item in projects">{{item.title}}</div>
+	</main>
+</body>
+</html>

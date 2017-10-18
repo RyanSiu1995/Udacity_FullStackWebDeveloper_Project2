@@ -1,0 +1,2 @@
+# ignore all the sass cache
+.sass-cache/*
