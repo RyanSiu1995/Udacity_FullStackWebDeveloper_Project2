@@ -39,7 +39,14 @@
 		</div>
 	</header>
 	<main id="show-case">
-		<div v-for="item in projects">{{item.title}}</div>
+		<section v-for="item in projects">
+			<h6>{{item.title}}</h6>
+			<img v-bind:src="item.image">
+			<div class="link">
+				<a v-bind:href="'https://github.com/RyanSiu1995/' + item.github">GitHub</a>
+				<a v-if="item.report" v-bind:href="item.report">Report</a>
+			</div>
+		</section>
 	</main>
 </body>
 </html>

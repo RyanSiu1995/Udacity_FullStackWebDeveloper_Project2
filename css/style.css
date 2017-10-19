@@ -22,4 +22,19 @@ header#topbar {
     header#topbar #personalInfo {
       text-align: center; } }
 
+main#show-case {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  main#show-case section {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 30%;
+    padding: 10px; }
+    main#show-case section img {
+      width: 100%; }
+    main#show-case section .link {
+      text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
