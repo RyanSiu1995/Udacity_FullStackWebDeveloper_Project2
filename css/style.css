@@ -1,25 +1,37 @@
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto !important; } }
 header#topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  font-family: "Anton", sans-serif; }
   header#topbar img {
     margin: 5px; }
   header#topbar #personalInfo {
-    text-align: right; }
+    text-align: left;
+    padding: 10px; }
   header#topbar #contactMethod {
     height: 30px; }
     header#topbar #contactMethod span {
       height: 30px;
       width: 30px; }
+    header#topbar #contactMethod a:hover {
+      color: transparent;
+      text-decoration: none; }
     header#topbar #contactMethod img {
       height: 100%; }
   @media only screen and (max-width: 600px) {
     header#topbar {
       justify-content: center; }
     header#topbar img {
+      order: 0;
       text-align: center; }
     header#topbar #personalInfo {
+      order: 1;
       text-align: center; } }
 
 main#show-case {
@@ -32,9 +44,13 @@ main#show-case {
     border-radius: 4px;
     width: 30%;
     padding: 10px; }
-    main#show-case section img {
+    main#show-case section .project-thumbnail img {
       width: 100%; }
     main#show-case section .link {
       text-align: center; }
+    @media only screen and (max-width: 600px) {
+      main#show-case section {
+        width: 100%;
+        margin: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@ $(document).ready(e => {
 					},
 					{
 						id: 2,
-						title: "Python Interactive Shell",
+						title: "Python Interactive Shell in Node",
 						github: "Python-In-NodeJS",
 						image: "images/showcase/pythonshell.png",
 						detail: "Python Interactive Shell in Socket.io and NodeJS"

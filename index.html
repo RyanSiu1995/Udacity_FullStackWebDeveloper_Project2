@@ -4,6 +4,7 @@
 	<title>Ryan Siu's Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- lib : jquery -->
 	<script type="application/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
@@ -20,28 +21,30 @@
 </head>
 <body>
 	<header id="topbar">
-		<img src="images/rs_icon.png" height="62">
 		<div id="personalInfo">
 			<h1>Ryan, Siu Long Wa</h1>
 			<h3>One Year Student Placement in HKO</h3>
 			<address id="contactMethod">
 				<span>
-					<a href="https://www.linkedin.com/in/ryansiu1995/">
-						<img src="images/linkedin/in-2C-48px-R.png">
-					</a>
-				</span>
-				<span>
 					<a href="https://github.com/RyanSiu1995">
 						<img src="images/github/GitHub-Mark-64px.png">
 					</a>
 				</span>
+				<span>
+					<a href="https://www.linkedin.com/in/ryansiu1995/">
+						<img src="images/linkedin/in-2C-48px-R.png">
+					</a>
+				</span>
 			</address>
 		</div>
+		<img src="images/rs_icon.png" height="62">
 	</header>
 	<main id="show-case">
 		<section v-for="item in projects">
 			<h6>{{item.title}}</h6>
-			<img v-bind:src="item.image">
+			<div class="project-thumbnail">
+				<img v-bind:src="item.image">
+			</div>
 			<div class="link">
 				<a v-bind:href="'https://github.com/RyanSiu1995/' + item.github">GitHub</a>
 				<a v-if="item.report" v-bind:href="item.report">Report</a>
