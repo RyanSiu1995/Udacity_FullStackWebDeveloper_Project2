@@ -5,16 +5,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- lib : jquery -->
-	<script type="application/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="lib/jquery/jquery-3.2.1.min.js"></script>
 	<!-- lib : popper.js -->
-	<script type="application/javascript" src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
+	<script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
 	<!-- Lib : Bootstrap 4 -->
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-reboot.min.css">
 	<!-- Lib : Vuejs -->
 	<script src="lib/vuejs/vue.js"></script>
 	<script src="js/showcase.js"></script>
@@ -27,19 +27,19 @@
 			<address id="contactMethod">
 				<span>
 					<a href="https://github.com/RyanSiu1995">
-						<img src="images/github/GitHub-Mark-64px.png">
+						<img src="images/github/GitHub-Mark-64px.png" alt="GitHub">
 					</a>
 				</span>
 				<span>
 					<a href="https://www.linkedin.com/in/ryansiu1995/">
-						<img src="images/linkedin/in-2C-48px-R.png">
+						<img src="images/linkedin/in-2C-48px-R.png" alt="Linkedin">
 					</a>
 				</span>
 			</address>
 		</div>
-		<img src="images/rs_icon.png" height="62">
+		<img src="images/rs_icon.png" height="62" alt="Ryan Siu">
 		<div id="coverImage">
-			<img src="images/cover.jpg">
+			<img src="images/cover.jpg" alt="Cover">
 		</div>
 	</header>
 	
@@ -47,7 +47,7 @@
 		<section v-for="item in projects">
 			<h6>{{item.title}}</h6>
 			<div class="project-thumbnail">
-				<img v-bind:src="item.image">
+				<img v-bind:src="item.image" v-bind:alt="item.title">
 			</div>
 			<div class="link">
 				<a v-bind:href="'https://github.com/RyanSiu1995/' + item.github">GitHub</a>

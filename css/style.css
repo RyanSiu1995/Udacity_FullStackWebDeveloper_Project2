@@ -20,7 +20,12 @@ header#topbar > img {
 
 header#topbar #personalInfo {
 	text-align: left;
-	padding: 10px;
+	padding: 10px 10px 2px 10px;;
+}
+
+header#topbar #coverImage {
+	border-top: 4px solid green;
+	padding: 5px 1px;
 }
 
 header#topbar #coverImage img {
@@ -75,10 +80,22 @@ main#show-case {
 
 main#show-case section {
 	display: inline-block;
-	border: 2px solid #ccc;
+	border: 2px solid #CCC;
 	border-radius: 4px;
 	width: 30%;
 	padding: 10px;
+}
+
+main#show-case section:nth-child(3n+0) {
+	border-color: #21A0A0;
+}
+
+main#show-case section:nth-child(3n+1) {
+	border-color: #FF595E;
+}
+
+main#show-case section:nth-child(3n+2) {
+	border-color: #46ACC2;
 }
 
 main#show-case section .project-thumbnail img {
