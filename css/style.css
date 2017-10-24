@@ -14,7 +14,7 @@ header#topbar {
 	font-family: "Anton", sans-serif;
 }
 
-header#topbar img {
+header#topbar > img {
 	margin: 5px;
 }
 
@@ -23,13 +23,18 @@ header#topbar #personalInfo {
 	padding: 10px;
 }
 
+header#topbar #coverImage img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 header#topbar #contactMethod {
 	height: 30px;
 }
 
 header#topbar #contactMethod span {
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 }
 
 header#topbar #contactMethod a:hover {
@@ -38,7 +43,8 @@ header#topbar #contactMethod a:hover {
 }
 
 header#topbar #contactMethod img {
-	height: 100%;
+	height: 40px;
+	margin: 0 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,8 +57,12 @@ header#topbar #contactMethod img {
 		text-align: center;
 	}
 
-	header#topbar #personalInfo {
+	header#topbar #coverImage {
 		order: 1;
+	}
+
+	header#topbar #personalInfo {
+		order: 2;
 		text-align: center;
 	}
 }
