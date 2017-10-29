@@ -4,50 +4,45 @@
 	<title>Ryan Siu's Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- style sheet -->
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- lib : jquery -->
-	<script src="lib/jquery/jquery-3.2.1.min.js"></script>
-	<!-- lib : popper.js -->
-	<script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
-	<!-- Lib : Bootstrap 4 -->
-	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- bootstrap 4 -->
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-reboot.min.css">
-	<!-- Lib : Vuejs -->
-	<script src="lib/vuejs/vue.js"></script>
-	<script src="js/showcase.js"></script>
 </head>
 <body>
 	<header id="topbar">
-		<div id="personalInfo">
+		<div class="personal-info-container">
 			<h1>Ryan, Siu Long Wa</h1>
 			<h3>One Year Student Placement in HKO</h3>
-			<address id="contactMethod">
-				<span>
-					<a href="https://github.com/RyanSiu1995">
-						<img src="images/github/GitHub-Mark-64px.png" alt="GitHub">
+			<address class="contact-method-container">
+				<span class="contact-method">
+					<a class="contact-link" href="https://github.com/RyanSiu1995">
+						<img class="contact-icon" src="images/github/GitHub-Mark-64px.png" alt="GitHub">
 					</a>
 				</span>
-				<span>
-					<a href="https://www.linkedin.com/in/ryansiu1995/">
-						<img src="images/linkedin/in-2C-48px-R.png" alt="Linkedin">
+				<span class="contact-method">
+					<a class="contact-link" href="https://www.linkedin.com/in/ryansiu1995/">
+						<img class="contact-icon" src="images/linkedin/in-2C-48px-R.png" alt="Linkedin">
 					</a>
 				</span>
 			</address>
 		</div>
-		<img src="images/rs_icon.png" height="62" alt="Ryan Siu">
-		<div id="coverImage">
-			<img src="images/cover.jpg" alt="Cover">
+		<div class="icon-container">
+			<img class="icon" src="images/rs_icon.png" height="62" alt="Ryan Siu">
+		</div>
+		<div class="cover-image-container">
+			<img class="cover-image" src="images/cover.jpg" alt="Cover">
 		</div>
 	</header>
 	
 	<main id="show-case">
-		<section v-for="item in projects">
+		<section class="project-item" v-for="item in projects">
 			<h6>{{item.title}}</h6>
-			<div class="project-thumbnail">
-				<img v-bind:src="item.image" v-bind:alt="item.title">
+			<div class="project-thumbnail-container">
+				<img class="project-thumbnail" v-bind:src="item.image" v-bind:alt="item.title">
 			</div>
 			<div class="description-container">
 				<p class="description">{{item.detail}}</p>
@@ -58,5 +53,16 @@
 			</div>
 		</section>
 	</main>
+
+	<!-- script import -->
+	<!-- lib : jquery -->
+	<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+	<!-- lib : popper.js -->
+	<script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
+	<!-- Lib : Bootstrap 4 -->
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Lib : Vuejs -->
+	<script src="lib/vuejs/vue.js"></script>
+	<script src="js/showcase.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Global Setting for responsive design */
 @media only screen and (min-width: 1024px) {
 	body {
 		width: 1024px;
@@ -6,7 +7,15 @@
 	}
 }
 
-header#topbar {
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Topbar */
+#topbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -14,105 +23,108 @@ header#topbar {
 	font-family: "Anton", sans-serif;
 }
 
-header#topbar > img {
+#topbar .cover-image-container {
 	margin: 5px;
 }
 
-header#topbar #personalInfo {
+#topbar .personal-info-container {
 	text-align: left;
 	padding: 10px 10px 2px 10px;;
 }
 
-header#topbar #coverImage {
+#topbar .cover-image-container {
 	border-top: 4px solid green;
 	padding: 5px 1px;
 }
 
-header#topbar #coverImage img {
+#topbar .cover-image-container .cover-image {
 	width: 100%;
 	margin-bottom: 10px;
 }
 
-header#topbar #contactMethod {
+#topbar .contact-method-container {
 	height: 30px;
 }
 
-header#topbar #contactMethod span {
+#topbar .contact-method-container .contact-method {
 	height: 40px;
 	width: 40px;
 }
 
-header#topbar #contactMethod a:hover {
+#topbar .contact-method-container .contact-method .contact-link:hover {
 	color: transparent;
 	text-decoration: none;
 }
 
-header#topbar #contactMethod img {
+#topbar .contact-method-container .contact-method .contact-icon {
+  display: inline-block;
 	height: 40px;
 	margin: 0 5px;
 }
 
 @media only screen and (max-width: 600px) {
-	header#topbar {
+	#topbar {
 		justify-content: center;
 	}
 
-	header#topbar img {
+	#topbar .icon-container {
 		order: 0;
 		text-align: center;
 	}
 
-	header#topbar #coverImage {
+	#topbar .cover-image-container {
 		order: 1;
 	}
 
-	header#topbar #personalInfo {
+	#topbar .personal-info-container {
 		order: 2;
 		text-align: center;
 	}
 }
 
-main#show-case {
+
+/* Project show cases */
+#show-case {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
-main#show-case section {
+#show-case .project-item {
 	display: inline-block;
-	border: 2px solid #CCC;
+	border: 2px solid #ccc;
 	border-radius: 4px;
 	width: 30%;
 	padding: 10px;
 }
 
-main#show-case section:nth-child(3n+0) {
-	border-color: #21A0A0;
+#show-case .project-item:nth-child(3n+0) {
+	border-color: #21a0a0;
 }
 
-main#show-case section:nth-child(3n+1) {
-	border-color: #FF595E;
+#show-case .project-item:nth-child(3n+1) {
+	border-color: #ff595e;
 }
 
-main#show-case section:nth-child(3n+2) {
-	border-color: #46ACC2;
+#show-case .project-item:nth-child(3n+2) {
+	border-color: #46acc2;
 }
 
-main#show-case section .project-thumbnail img {
+#show-case .project-item .project-thumbnail-container .project-thumbnail {
 	width: 100%;
 }
 
-main#show-case .description-container {
+#show-case .description-container {
   text-align: left;
   padding: 0 5%;
 }
 
-main#show-case section .link {
+#show-case .project-item .link {
 	text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-	main#show-case section {
+	#show-case .project-item {
 		width: 100%;
 		margin: 10px;
 	}
