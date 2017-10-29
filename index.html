@@ -49,6 +49,9 @@
 			<div class="project-thumbnail">
 				<img v-bind:src="item.image" v-bind:alt="item.title">
 			</div>
+			<div class="description-container">
+				<p class="description">{{item.detail}}</p>
+			</div>
 			<div class="link">
 				<a v-bind:href="'https://github.com/RyanSiu1995/' + item.github">GitHub</a>
 				<a v-if="item.report" v-bind:href="item.report">Report</a>
